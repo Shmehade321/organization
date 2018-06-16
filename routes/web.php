@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'UploadController@index');
+Route::post('/', 'UploadController@import');
+Route::get('download', 'UploadController@download');
